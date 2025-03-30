@@ -15,10 +15,23 @@
     />
     <link rel="icon" href="../img/logo.ico" type="image/x-icon" />
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script>
-  if (window.location.pathname.endsWith(".html")) {
-    window.history.replaceState(null, null, window.location.pathname.replace(".html", ""));
-  }
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let path = window.location.pathname;
+
+    // Remove "/pages/" from the URL
+    if (path.includes("/pages/")) {
+      path = path.replace("/pages", "");
+    }
+
+    // Remove ".html" from the URL
+    if (path.endsWith(".html")) {
+      path = path.replace(".html", "");
+    }
+
+    // Update the URL without reloading the page
+    window.history.replaceState(null, null, path);
+  });
 </script>
   </head>
   <body>
