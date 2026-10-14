@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Totos Group - Alexandria Information Center</title>
+    <meta
+      name="description"
+      content="Alexandria Information Center (AIC) by Totos Group - Your premier gateway to exploring Alexandria. City landmarks, interactive guides, custom tours, and local expertise."
+    />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/global.css" rel="stylesheet" />
+    <link href="../css/about.css" rel="stylesheet" />
+    <link href="../css/services.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../img/logo.ico" type="image/x-icon" />
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+      try {
+        if (
+          window.location.protocol.startsWith("http") &&
+          window.location.pathname.endsWith(".html")
+        ) {
+          window.history.replaceState(
+            null,
+            null,
+            window.location.pathname.replace(".html", "")
+          );
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div class="main_1">
+      <section id="top" class="top_o">
+        <div class="container">
+          <div class="row top_1">
+            <div class="col-md-10">
+              <div class="top_1l">
+                <ul class="mb-0">
+                  <li class="d-inline-block font_13 col_light pt-2 pb-2">
+                    <i class="fa fa-map text-white"></i> Alexandria, Egypt
+                  </li>
+                  <li class="d-inline-block font_13 col_light pt-2 pb-2">
+                    <i class="fa fa-clock-o text-white"></i> 1-6 days of the week
+                  </li>
+                  <li
+                    class="d-inline-block font_13 col_light pt-2 pb-2 border-0"
+                  >
+                    <i class="fa fa-envelope text-white"></i>
+                    <a
+                      href="mailto:info@totosgroup.com"
+                      class="text-white text-decoration-none"
+                      >Info@totosgroup.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="top_1r">
+                <ul class="social-network social-circle mb-0 mt-2">
+                  <li>
+                    <a
+                      href="https://wa.me/201014157552?text=Hi%20AIC%20Alexandria"
+                      class="icoWhatsApp"
+                      title="WhatsApp"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="fa fa-whatsapp"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/Totos.Group"
+                      class="icoFacebook"
+                      title="Facebook"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/siwa_guide/"
+                      class="icoInstagram"
+                      title="Instagram"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="fa fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/Mohamed.Aly.Othman"
+                      class="icoLinkedin"
+                      title="Founder Profile"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="fa fa-user"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="header">
+        <div
+          class="modal fade"
+          id="exampleModal2"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          style="display: none; top: 0"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content bg-transparent border-0">
+              <div class="modal-header border-0">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fa fa-close"></i>
+                </button>
+              </div>
+              <div class="modal-body p-0">
+                <div class="search_1">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      id="searchInputModal"
+                      class="form-control bg-transparent border-0"
+                      placeholder="Type keyword: amazon, aic, siwa, cargo, lodge..."
+                    />
+                    <span class="input-group-btn">
+                      <button
+                        class="btn btn-primary bg-transparent border-0"
+                        type="button"
+                        onclick="handleModalSearch()"
+                      >
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav
+          class="navbar navbar-expand-md navbar-light pt-3 pb-3"
+          id="navbar_sticky"
+        >
+          <div class="container">
+            <a class="navbar-brand text-white pt-1 m-0" href="../index.html">
+              <span class="col_oran">Totos</span> Group</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-0 ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="services.html"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul
+                    class="dropdown-menu drop_1"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="services.html"
+                        ><i class="fa fa-th-large"></i> All Services Overview</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider my-1" /></li>
+                    <li>
+                      <a class="dropdown-item" href="amazon.html"
+                        ><i class="fa fa-circle-o"></i> Totos Store "Amazon"</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item active" href="aic.html"
+                        ><i class="fa fa-circle-o"></i> Totos Information Center
+                        "Alexandria"</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="sic.html"
+                        ><i class="fa fa-circle-o"></i> Totos Information Center
+                        "Siwa"</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="lodge.html"
+                        ><i class="fa fa-circle-o"></i> Totos Lodge</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="cargo.html"
+                        ><i class="fa fa-circle-o"></i> Totos CarGo</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="siwa-guide.html"
+                        ><i class="fa fa-circle-o"></i> Siwa Guide</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownPartners"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Our Partners
+                  </a>
+                  <ul
+                    class="dropdown-menu drop_1"
+                    aria-labelledby="navbarDropdownPartners"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="siwa-guide.html"
+                        ><i class="fa fa-circle-o"></i> Siwa Guide</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownAbout"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    About Us
+                  </a>
+                  <ul
+                    class="dropdown-menu drop_1"
+                    aria-labelledby="navbarDropdownAbout"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="about.html"
+                        ><i class="fa fa-circle-o"></i> Who We Are?</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="team.html"
+                        ><i class="fa fa-circle-o"></i> Our Team</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link drop_togn"
+                    data-bs-target="#exampleModal2"
+                    data-bs-toggle="modal"
+                    href="#"
+                    aria-label="Search"
+                    ><i class="fa fa-search"></i
+                  ></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="button" href="contact.html">Appointment</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <section id="center" class="center_o">
+        <div class="container">
+          <div class="row center_o1 text-center">
+            <div class="col-md-12">
+              <h1 class="text-white font_60">Alexandria Information Center</h1>
+              <h6 class="col_light mb-0">
+                <a class="col_light" href="../index.html">Home</a> /
+                <span class="col_oran">Alexandria Information Center</span>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!------------------------------- Header End ------------------------------->
+
+    <section id="about" class="pt-5 pb-5">
+      <div class="container">
+        <div class="about_1 row">
+          <div class="col-md-6">
+            <div class="about_1l clearfix">
+              <h5 class="col_oran font_16">
+                Your Gateway to Exploring Alexandria
+              </h5>
+              <h3>Alexandria: Nothing Compares....</h3>
+              <p>
+                Discover the best of Alexandria with our expert guides and curated
+                information. From iconic landmarks like the Citadel of Qaitbay and
+                the Bibliotheca Alexandrina to hidden Mediterranean gems, we help
+                visitors and locals uncover the city's rich history and vibrant
+                coastal culture.
+              </p>
+              <p class="fw-bold mb-1">A message from our founder:</p>
+              <blockquote>
+                <p>
+                  "We’re here to guide you through the wonders of this historic
+                  and vibrant city. From personalized tours to essential travel
+                  resources, we ensure your Alexandria journey is unforgettable."
+                </p>
+                <p class="mb-0">Warm regards,</p>
+                <h5 class="col_oran font_16 mt-2">Mohamed Othman (Totos)</h5>
+              </blockquote>
+              <div class="mt-4">
+                <a class="button me-2" href="contact.html">Book Tour Info</a>
+                <a
+                  class="button_2"
+                  href="https://wa.me/201014157552?text=Hi%20AIC,%20I'd%20like%20information%20about%20Alexandria%20tours"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa fa-whatsapp"></i> Chat with Local Guide</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about_1r clearfix">
+              <div class="grid clearfix">
+                <figure class="effect-jazz mb-0">
+                  <img
+                    src="../img/AIC.png"
+                    class="w-100"
+                    alt="Alexandria Information Center"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about_3 row mt-5">
+          <div class="col-md-12">
+            <h2>Why Choose Us</h2>
+          </div>
+        </div>
+        <div class="about_3i row">
+          <div class="col-md-4">
+            <div class="about_3ii text-center clearfix">
+              <span><i class="fa fa-globe col_oran"></i></span>
+              <h4 class="mt-3">Expert Guidance</h4>
+              <p class="mt-3 mb-0">
+                Our knowledgeable local team provides tailored recommendations,
+                insightful historical tips, and personalized itineraries to help you
+                explore Alexandria effortlessly.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about_3ii text-center clearfix">
+              <span><i class="fa fa-taxi col_oran"></i></span>
+              <h4 class="mt-3">Seamless Services</h4>
+              <p class="mt-3 mb-0">
+                From Totos CarGo transportation assistance to custom itineraries,
+                we ensure a hassle-free and enjoyable experience for every traveler.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about_3ii text-center clearfix">
+              <span><i class="fa fa-map-pin col_oran"></i></span>
+              <h4 class="mt-3">Local Insights</h4>
+              <p class="mt-3 mb-0">
+                Discover hidden architectural gems, authentic seafood eateries,
+                and seaside viewpoints with our locally rooted knowledge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work_h" class="pt-5 mt-0 pb-5">
+      <div class="container">
+        <div class="row work_h1 text-center">
+          <div class="col-md-12">
+            <h6 class="col_oran font_15">WHAT WE DO</h6>
+            <h1 class="col_blue">We Bring Alexandria Closer to You</h1>
+            <p>
+              At Alexandria Information Center, we provide expert guidance,
+              customized tours, and reliable resources <br />to help you explore
+              Alexandria’s history, culture, and attractions with ease.
+            </p>
+          </div>
+        </div>
+        <div class="row work_h2 mt-3">
+          <div class="col-md-4 mb-4">
+            <div class="work_h2i position-relative">
+              <div class="work_h2i1">
+                <img src="../img/8.jpg" class="w-100" alt="Top Attractions" />
+              </div>
+              <div class="work_h2i2 bg-white position-absolute w-100 h-100">
+                <span><i class="fa fa-camera-retro"></i></span>
+                <h5>Top Attractions</h5>
+                <p class="font_14">Explore Alexandria's Timeless Landmarks and coastal heritage.</p>
+                <h6 class="font_13 mb-0"><a href="contact.html">LEARN MORE <i class="fa fa-arrow-right"></i></a></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="work_h2i position-relative">
+              <div class="work_h2i1">
+                <img src="../img/9.jpg" class="w-100" alt="Local Guides" />
+              </div>
+              <div class="work_h2i2 bg-white position-absolute w-100 h-100">
+                <span><i class="fa fa-compass"></i></span>
+                <h5>Local Guides</h5>
+                <p class="font_14">Your personal, certified local guide to the Mediterranean bride.</p>
+                <h6 class="font_13 mb-0"><a href="contact.html">BOOK GUIDE <i class="fa fa-arrow-right"></i></a></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="work_h2i position-relative">
+              <div class="work_h2i1">
+                <img src="../img/10.jpg" class="w-100" alt="Transportation Assistance" />
+              </div>
+              <div class="work_h2i2 bg-white position-absolute w-100 h-100">
+                <span><i class="fa fa-bus"></i></span>
+                <h5>Transportation Assistance</h5>
+                <p class="font_14">Getting around made simple with on-demand Totos CarGo services.</p>
+                <h6 class="font_13 mb-0"><a href="cargo.html">VIEW CARGO <i class="fa fa-arrow-right"></i></a></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row work_h2 mt-3">
+          <div class="col-md-4 mb-4">
+            <div class="work_h2i position-relative">
+              <div class="work_h2i1">
+                <img src="../img/11.jpg" class="w-100" alt="Custom Tour Packages" />
+              </div>
+              <div class="work_h2i2 bg-white position-absolute w-100 h-100">
+                <span><i class="fa fa-globe"></i></span>
+                <h5>Custom Tour Packages</h5>
+                <p class="font_14">Tailored experiences designed specifically for your group.</p>
+                <h6 class="font_13 mb-0"><a href="contact.html">CUSTOM TOUR <i class="fa fa-arrow-right"></i></a></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="work_h2i position-relative">
+              <div class="work_h2i1">
+                <img src="../img/12.jpg" class="w-100" alt="Maps & Resources" />
+              </div>
+              <div class="work_h2i2 bg-white position-absolute w-100 h-100">
+                <span><i class="fa fa-map"></i></span>
+                <h5>Maps & Travel Resources</h5>
+                <p class="font_14">Navigate Alexandria with curated digital maps and walking trails.</p>
+                <h6 class="font_13 mb-0"><a href="contact.html">GET MAPS <i class="fa fa-arrow-right"></i></a></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="work_h2i position-relative">
+              <div class="work_h2i1">
+                <img src="../img/13.jpg" class="w-100" alt="Traffic & Mobility" />
+              </div>
+              <div class="work_h2i2 bg-white position-absolute w-100 h-100">
+                <span><i class="fa fa-binoculars"></i></span>
+                <h5>Traffic & Route Guidance</h5>
+                <p class="font_14">Reach your destination faster with real-time transit tips.</p>
+                <h6 class="font_13 mb-0"><a href="cargo.html">PLAN ROUTE <i class="fa fa-arrow-right"></i></a></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="alex_guide_season" class="pt-5 pb-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-md-12">
+            <h6 class="col_oran font_15">EXPLORE THE PEARL OF THE MEDITERRANEAN</h6>
+            <h1 class="col_blue">Best Time to Visit Alexandria & City Guide</h1>
+            <p>
+              Alexandria boasts a refreshing Mediterranean climate with vibrant seasonal rhythms.<br />
+              Here is your seasonal breakdown and visitor checklist for the bride of the Mediterranean.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 Seasons Cards -->
+        <div class="row g-4 mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="season-guide-card text-center">
+              <span class="season-badge" style="background: #e0f2fe; color: #0369a1;">Spring (Mar - May)</span>
+              <h4 class="mt-2 mb-2">Breezy & Blooming</h4>
+              <p class="col_oran fw-bold font_14">20°C - 25°C | Mild Mediterranean</p>
+              <p class="font_14 text-muted mb-0">
+                Lush gardens at Montaza Palace, comfortable seaside walking along the Corniche, and uncrowded historical landmarks.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="season-guide-card text-center">
+              <span class="season-badge" style="background: #fef3c7; color: #b45309;">Summer (Jun - Aug)</span>
+              <h4 class="mt-2 mb-2">Beach & Nightlife</h4>
+              <p class="col_oran fw-bold font_14">28°C - 31°C | Coastal Breeze</p>
+              <p class="font_14 text-muted mb-0">
+                Peak coastal holiday season with buzzing cafes, fresh seafood waterfront dining, lively beaches, and vibrant open-air nightlife.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="season-guide-card text-center">
+              <span class="season-badge" style="background: #dcfce7; color: #15803d;">Autumn (Sep - Nov)</span>
+              <h4 class="mt-2 mb-2">Cultural Season</h4>
+              <p class="col_oran fw-bold font_14">22°C - 27°C | Ideal Weather</p>
+              <p class="font_14 text-muted mb-0">
+                The perfect season for culture enthusiasts. Relaxed visits to the Bibliotheca Alexandrina, Roman Amphitheatre, and Catacombs of Kom El Shoqafa.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="season-guide-card text-center">
+              <span class="season-badge" style="background: #fee2e2; color: #b91c1c;">Winter (Dec - Feb)</span>
+              <h4 class="mt-2 mb-2">Atmospheric & Moody</h4>
+              <p class="col_oran fw-bold font_14">14°C - 19°C | Sea Breezes</p>
+              <p class="font_14 text-muted mb-0">
+                Experience the famous Mediterranean winter waves (Nawat), dramatic stormy sea photography at Qaitbay Citadel, and historic Greek and Italian cafes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- City Checklist -->
+        <div class="row align-items-center bg-white p-4 p-md-5 rounded-4 shadow-sm border">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <h6 class="col_oran font_15">VISITOR TIPS</h6>
+            <h2 class="mb-3">Essential Alexandria Travel Tips</h2>
+            <p class="text-muted font_15">
+              Make the most of your stay in Egypt's historic second capital with our insider advice on navigation and local culture.
+            </p>
+            <a href="https://wa.me/201014157552?text=Hi%20Alexandria%20Information%20Center,%20I'd%20like%20local%20recommendations" target="_blank" rel="noopener" class="button d-inline-block">
+              <i class="fa fa-whatsapp me-1"></i> Ask AIC Travel Desk
+            </a>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-light border-start border-4 border-warning">
+                  <h6 class="fw-bold mb-1"><i class="fa fa-ticket col_oran me-2"></i>Smart Booking & Passes</h6>
+                  <p class="font_13 text-muted mb-0">Book Bibliotheca Alexandrina museum tickets in advance; many monuments accept cashless digital payments.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-light border-start border-4 border-warning">
+                  <h6 class="fw-bold mb-1"><i class="fa fa-cutlery col_oran me-2"></i>Waterfront Dining</h6>
+                  <p class="font_13 text-muted mb-0">Taste authentic catch-of-the-day fish markets in Al-Anfoushi and legendary Greek pasticceria in downtown.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-light border-start border-4 border-warning">
+                  <h6 class="fw-bold mb-1"><i class="fa fa-car col_oran me-2"></i>Mobility & Transfers</h6>
+                  <p class="font_13 text-muted mb-0">Reserve a dedicated Totos CarGo private chauffeur for stress-free day tours across the 20km Corniche strip.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-light border-start border-4 border-warning">
+                  <h6 class="fw-bold mb-1"><i class="fa fa-camera col_oran me-2"></i>Golden Hour Sunset Spots</h6>
+                  <p class="font_13 text-muted mb-0">Stanly Bridge and the promenade by Citadel of Qaitbay offer breathtaking Mediterranean sunsets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="spec" class="pt-5 pb-5">
+      <div class="spec_m spec_team">
+        <div class="container">
+          <div class="row spec_1 text-center">
+            <div class="col-md-12">
+              <h1 class="text-white">Exploring Alexandria Soon?</h1>
+              <p class="col_light font_15 mt-4">
+                Stop by our center or message us for instant attraction recommendations,
+                ticket guides, and city tour arrangements.
+              </p>
+              <h5 class="mt-4 mb-0">
+                <a class="button me-2" href="contact.html"
+                  >Contact AIC <i class="fa fa-arrow-right"></i
+                ></a>
+                <a
+                  class="button_1"
+                  href="https://wa.me/201014157552?text=Hi%20AIC,%20I'd%20like%20information%20on%20Alexandria%20tours"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa fa-whatsapp"></i> WhatsApp Us</a
+                >
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------- Footer Start ------------------------------->
+
+    <section id="footer" class="pt-5">
+      <div class="container">
+        <div class="row footer_1">
+          <div class="col-md-3">
+            <div class="footer_1i">
+              <h3 class="mb-4">
+                <a class="text-white" href="../index.html">
+                  <span class="col_oran">Totos</span> Group</a
+                >
+              </h3>
+              <p class="col_light font_15 mb-4">
+                Totos Group delivers end-to-end solutions, combining retail,
+                travel, and mobility to simplify and enhance everyday life and
+                exploration.<br />
+                Contact us for an online appointment now.
+              </p>
+              <ul class="social-network social-circle mb-0 mt-2">
+                <li>
+                  <a
+                    href="https://wa.me/201014157552?text=Hi%20Totos%20Group"
+                    class="icoWhatsApp"
+                    title="WhatsApp"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="fa fa-whatsapp"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/Totos.Group"
+                    class="icoFacebook"
+                    title="Facebook"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/siwa_guide/"
+                    class="icoInstagram"
+                    title="Instagram"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/Mohamed.Aly.Othman"
+                    class="icoLinkedin"
+                    title="Founder Profile"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="fa fa-user"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer_1i">
+              <h4 class="mb-4 text-white">News</h4>
+              <div class="footer_1i1 row">
+                <div class="col-md-3 col-3">
+                  <div class="footer_1i1l">
+                    <img
+                      src="../img/15.jpg"
+                      alt="News"
+                      class="rounded-circle w-100"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-9 px-0 col-9">
+                  <div class="footer_1i1r">
+                    <p class="font_15 mb-0">
+                      <a class="col_light" href="amazon.html"
+                        >Totos Amazon Store Reaches 2,000 Products Milestone!</a
+                      >
+                    </p>
+                    <p class="col_oran font_13 fw-bold">Aug 1, 2022</p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_1i1 row">
+                <div class="col-md-3 col-3">
+                  <div class="footer_1i1l">
+                    <img
+                      src="../img/16.jpg"
+                      alt="News"
+                      class="rounded-circle w-100"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-9 px-0 col-9">
+                  <div class="footer_1i1r">
+                    <p class="font_15 mb-0">
+                      <a class="col_light" href="aic.html"
+                        >Alexandria Information Center Launches New Interactive
+                        Maps</a
+                      >
+                    </p>
+                    <p class="col_oran font_13 fw-bold">Sep 23, 2021</p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_1i1 row">
+                <div class="col-md-3 col-3">
+                  <div class="footer_1i1l">
+                    <img
+                      src="../img/17.jpg"
+                      alt="News"
+                      class="rounded-circle w-100"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-9 px-0 col-9">
+                  <div class="footer_1i1r">
+                    <p class="font_15 mb-0">
+                      <a class="col_light" href="cargo.html"
+                        >Totos CarGo Expands Services to Siwa Oasis</a
+                      >
+                    </p>
+                    <p class="col_oran font_13 fw-bold">May 13, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer_1i2">
+              <h4 class="mb-4 text-white">Tags</h4>
+              <ul>
+                <li class="d-inline-block"><a href="aic.html">Alexandria</a></li>
+                <li class="d-inline-block"><a href="aic.html">Tourism</a></li>
+                <li class="d-inline-block"><a href="cargo.html">CarGo</a></li>
+                <li class="d-inline-block"><a href="amazon.html">Amazon</a></li>
+                <li class="d-inline-block"><a href="sic.html">Siwa</a></li>
+                <li class="d-inline-block"><a href="lodge.html">Lodge</a></li>
+                <li class="d-inline-block"><a href="services.html">Services</a></li>
+                <li class="d-inline-block"><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer_1i2">
+              <h4 class="mb-4 text-white">Gallery</h4>
+              <div class="footer_1i2i row">
+                <div class="col-md-4 col-4 px-1">
+                  <div class="footer_1i2i1">
+                    <a href="#"><img src="../img/28.jpg" class="w-100" alt="Gallery 1" /></a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-4 px-1">
+                  <div class="footer_1i2i1">
+                    <a href="#"><img src="../img/29.jpg" class="w-100" alt="Gallery 2" /></a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-4 px-1">
+                  <div class="footer_1i2i1">
+                    <a href="#"><img src="../img/30.jpg" class="w-100" alt="Gallery 3" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_1i2i row mt-2">
+                <div class="col-md-4 col-4 px-1">
+                  <div class="footer_1i2i1">
+                    <a href="#"><img src="../img/31.jpg" class="w-100" alt="Gallery 4" /></a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-4 px-1">
+                  <div class="footer_1i2i1">
+                    <a href="#"><img src="../img/32.jpg" class="w-100" alt="Gallery 5" /></a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-4 px-1">
+                  <div class="footer_1i2i1">
+                    <a href="#"><img src="../img/33.jpg" class="w-100" alt="Gallery 6" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_1i2i row mt-2">
+                <div class="col-md-4 col-4 px-1">
+                  <div class="footer_1i2i1">
+                    <a href="#"><img src="../img/34.jpg" class="w-100" alt="Gallery 7" /></a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-4 px-1">
+                  <div class="footer_1i2i1">
+                    <a href="#"><img src="../img/35.jpg" class="w-100" alt="Gallery 8" /></a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-4 px-1">
+                  <div class="footer_1i2i1">
+                    <a href="#"><img src="../img/36.jpg" class="w-100" alt="Gallery 9" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer_b" class="pt-3 pb-3">
+      <div class="container">
+        <div class="row footer_b_1 text-center">
+          <div class="col-md-12">
+            <p class="mb-0 col_light font_15">
+              © 2025
+              <a class="col_oran" href="https://www.facebook.com/Totos.Group"
+                >Totos Group</a
+              >
+              All Rights Reserved | Design by
+              <a
+                class="col_oran"
+                href="https://www.facebook.com/Mohamed.Aly.Othman"
+                >Mohamed Othman</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar_sticky = document.getElementById("navbar_sticky");
+      var sticky = navbar_sticky.offsetTop;
+      var navbar_height = document.querySelector(".navbar").offsetHeight;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky + navbar_height) {
+          navbar_sticky.classList.add("sticky");
+          document.body.style.paddingTop = navbar_height + "px";
+        } else {
+          navbar_sticky.classList.remove("sticky");
+          document.body.style.paddingTop = "0";
+        }
+      }
+
+      function handleModalSearch() {
+        var q = document.getElementById("searchInputModal").value.toLowerCase().trim();
+        if (!q) return;
+        if (q.includes("amazon") || q.includes("store") || q.includes("grocery")) {
+          window.location.href = "amazon.html";
+        } else if (q.includes("alex") || q.includes("aic")) {
+          window.location.href = "aic.html";
+        } else if (q.includes("cargo") || q.includes("trans") || q.includes("car")) {
+          window.location.href = "cargo.html";
+        } else if (q.includes("lodge") || q.includes("hotel") || q.includes("stay")) {
+          window.location.href = "lodge.html";
+        } else if (q.includes("guide") || q.includes("youssef")) {
+          window.location.href = "siwa-guide.html";
+        } else if (q.includes("siwa") || q.includes("sic")) {
+          window.location.href = "sic.html";
+        } else if (q.includes("about") || q.includes("who")) {
+          window.location.href = "about.html";
+        } else if (q.includes("team") || q.includes("othman")) {
+          window.location.href = "team.html";
+        } else if (q.includes("contact") || q.includes("call") || q.includes("phone")) {
+          window.location.href = "contact.html";
+        } else {
+          window.location.href = "services.html";
+        }
+      }
+    </script>
+    <script src="../js/totos-enhancements.js"></script>
+  </body>
+</html>

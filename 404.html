@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Not Found - Totos Group</title>
+    <script>
+      // Smart router for clean URLs on static hosting (GitHub Pages / Cloudflare)
+      (function() {
+        var path = window.location.pathname.toLowerCase();
+        // Remove trailing slash
+        if (path.length > 1 && path.endsWith('/')) {
+          path = path.slice(0, -1);
+        }
+        var pageMap = {
+          "/about": "/pages/about.html",
+          "/services": "/pages/services.html",
+          "/contact": "/pages/contact.html",
+          "/team": "/pages/team.html",
+          "/amazon": "/pages/amazon.html",
+          "/aic": "/pages/aic.html",
+          "/sic": "/pages/sic.html",
+          "/lodge": "/pages/lodge.html",
+          "/cargo": "/pages/cargo.html",
+          "/siwa-guide": "/pages/siwa-guide.html",
+          "/siwa": "/pages/sic.html"
+        };
+        for (var key in pageMap) {
+          if (path === key || path === key + ".html" || path.endsWith(key) || path.endsWith(key + ".html")) {
+            window.location.replace(pageMap[key]);
+            return;
+          }
+        }
+      })();
+    </script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo.ico" type="image/x-icon" />
+  </head>
+  <body class="bg-light">
+    <div class="container text-center py-5" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <h1 class="col_oran" style="font-size: 96px; font-weight: bold;">404</h1>
+      <h2 class="col_blue mb-3">Page Not Found</h2>
+      <p class="font_16 text-muted mb-4" style="max-width: 500px;">
+        The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+      </p>
+      <div class="d-flex gap-2 justify-content-center flex-wrap">
+        <a href="index.html" class="button">Back to Home</a>
+        <a href="pages/services.html" class="button_2">Explore Our Services</a>
+        <a href="pages/contact.html" class="button_1 text-dark" style="border-color: #ff6a3e;">Contact Support</a>
+      </div>
+    </div>
+    <div class="text-center py-3 border-top">
+      <p class="mb-0 text-muted font_14">
+        © 2025 <a href="index.html" class="col_oran">Totos Group</a>. All Rights Reserved.
+      </p>
+    </div>
+  </body>
+</html>
